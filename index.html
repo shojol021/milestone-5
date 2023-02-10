@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learning JS</title>
+</head>
+
+<body>
+    <section class="section1">
+        <h1>Countries</h1>
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+            <li>text4</li>
+        </ul>
+    </section>
+
+    <section class="section2">
+        <h1>Animals</h1>
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+            <li>text4</li>
+        </ul>
+    </section>
+
+    <section class="section3">
+        <h1>Heading 3</h1>
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+            <li>text4</li>
+        </ul>
+    </section>
+
+
+    <script src="dom.js"></script>
+    <script>
+        const liItems = document.getElementsByTagName('li');
+        for(const item of liItems){
+            console.log(item.innerText);
+        }
+        console.log(liItems);
+
+        const allHeads = document.getElementsByTagName('h1');
+        console.log(allHeads);
+
+        const sectionNod = document.querySelectorAll('.section1 li');
+        console.log(sectionNod);
+    </script>
+</body>
+
+</html>
