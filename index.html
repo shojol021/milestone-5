@@ -10,9 +10,15 @@
 </head>
 
 <body>
-    <section class="section1">
+    <section id="sectionId1" class="section1">
         <h1>Countries</h1>
-        <ul>
+        <button onclick="document.body.style.backgroundColor = 'yellow'">Yellow</button>
+        <button onclick="makeRed()">Red</button>
+        <button id="btn-blue">Blue</button>
+        <button id="btn-purple">Purple</button>
+        <button id="btn-pink">Pink</button>
+        <button id="btn-goldenrod">Goldenrod</button>
+        <ul id="li-countries" class="bgcolor">
             <li>text1</li>
             <li>text2</li>
             <li>text3</li>
@@ -22,7 +28,7 @@
 
     <section class="section2">
         <h1>Animals</h1>
-        <ul>
+        <ul id="ul2" class="ul2class">
             <li>text1</li>
             <li>text2</li>
             <li>text3</li>
@@ -43,17 +49,28 @@
 
     <script src="dom.js"></script>
     <script>
-        const liItems = document.getElementsByTagName('li');
-        for(const item of liItems){
-            console.log(item.innerText);
-        }
-        console.log(liItems);
+        // const liItems = document.getElementsByTagName('li');
+        // for(const item of liItems){
+        //     console.log(item.innerText);
+        // }
+        // console.log(liItems);
 
-        const allHeads = document.getElementsByTagName('h1');
-        console.log(allHeads);
+        // const allHeads = document.getElementsByTagName('h1');
+        // console.log(allHeads);
 
-        const sectionNod = document.querySelectorAll('.section1 li');
-        console.log(sectionNod);
+        // const sectionNod = document.querySelectorAll('.section1 li');
+        // console.log(sectionNod);
+
+        // document.getElementById('ul2').style.color = 'red';
+        // document.getElementById('ul2').style.textAlign = 'center';
+
+        // const name = document.getElementById('ul2').getAttribute('id');
+        // const get = name.getAttribute('id');
+        // const get2 = name.getAttribute('class');
+        // console.log(get);
+        // console.log(get2);
+        
+        
     </script>
 </body>
 
