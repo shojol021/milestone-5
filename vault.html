@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl text-center text-purple-600 my-9">Welcome to Vault</h1>
+    </header>
+
+    <main>
+        <section class="bg-blue-100 w-11/12 py-9 mx-auto rounded-lg">
+            <div class="grid grid-cols-3 gap-6 w-5/6 mx-auto mb-6">
+                <div class="bg-purple-400 rounded-lg text-white text-2xl p-9">
+                    <h4>Deposit Amount</h4>
+                    <h2>$ <span id="dp-total" class="font-bold text-4xl">100</span></h2>
+                </div>
+                <div class="bg-blue-400 rounded-lg text-white text-2xl p-9">
+                    <h4>Withdraw Amount</h4>
+                    <h2>$ <span id="wd-total" class="font-bold text-4xl">00</span></h2>
+                </div>
+                <div class="bg-green-400 rounded-lg text-white text-2xl p-9">
+                    <h4>Total Amount</h4>
+                    <h2>$ <span id="total" class="font-bold text-4xl">2000</span></h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 w-5/6 mx-auto">
+                <div class="bg-purple-400 rounded-lg p-9">
+                    <h4 class="text-white text-2xl">Make Deposit</h4>
+                    <input id="dp-inp-fld" class="rounded-sm px-2 py-1 mt-3" type="text" placeholder="Enter Deposit Amount">
+                    <br>
+                    <button id="btn-deposit" class="mt-3 bg-blue-600 text-white px-3 py-1 rounded-lg">Deposit</button>
+                </div>
+                <div class="bg-blue-400 rounded-lg p-9">
+                    <h4 class="text-white text-2xl">Request Withdraw</h4>
+                    <input id="wd-inp-fld" class="rounded-sm px-2 py-1 mt-3" type="text" placeholder="Enter Withdraw Amount">
+                    <br>
+                    <button id="btn-withdraw" class="mt-3 bg-blue-600 text-white px-3 py-1 rounded-lg">Request</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="vault.js"></script>
+</body>
+
+</html>
