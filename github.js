@@ -38,7 +38,8 @@ document.getElementById('items').addEventListener('click', function(event){
 //     })
 // }
 
-document.getElementById('inputText').addEventListener('keyup', function (event) {
+let input; 
+document.getElementById('inputText2').addEventListener('keyup', function (event) {
     input = event.target.value;
    
 })
@@ -49,6 +50,8 @@ document.getElementById('btn-add').addEventListener('click', function(){
     newLi.innerText = input;
     newLi.classList.add('item');
     ul.append(newLi);
-    const input2 = input;
-    inputText.value = '';
+    console.log(this.innerText2);
+    inputText2.value = '';
+
+    // document.getElementById('inputText2').value = '';
 })
