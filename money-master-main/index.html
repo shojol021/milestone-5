@@ -28,7 +28,7 @@
                         <div class="px-3 py-1">Income:</div>
                     </div>
                     <div>
-                        <div class="bg-slate-300 px-3 py-1 mb-3 w-20">00</div>
+                        <input id="income" class="w-20 h-8 mb-3" type="text"><br>
                     </div>
                 </div>
 
@@ -41,53 +41,40 @@
                         <div class="px-3 py-1 mb-3">Clothes:</div>
                     </div>
                     <div>
-                        <div class="bg-slate-300 px-3 py-1 mb-3 w-20">00</div>
-                        <div class="bg-slate-300 px-3 py-1 mb-3 w-20">00</div>
-                        <div class="bg-slate-300 px-3 py-1 mb-3 w-20">00</div>
+                        <input id="food" class="w-20 h-8 mb-3" type="text"><br>
+                        <input id="rent" class="w-20 h-8 mb-3" type="text"><br>
+                        <input id="cloth" class="w-20 h-8" type="text">
                     </div>
                 </div>
 
                 <div class="text-center mt-3">
-                    <button class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button id="btn-calculate"
+                        class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Calculate
                     </button>
                 </div>
-                <h3 class="text-center text-2xl mt-9">Total Expenses</h3>
-                <h3 class="text-center text-2xl mt-9">Balance</h3>
+                <h3 class="text-center text-2xl mt-9">Total Expenses: $<span id="expense"
+                        class="text-blue-600">00</span></h3>
+                <h3 class="text-center text-2xl mt-9">Balance: $ <span id="balance" class="text-blue-600">00</span></h3>
 
                 <div class="text-center">Save
-                    <input class="w-20 h-10" type="text">
+                    <input id="save" class="w-20 h-10" type="text">
                     %
-                    <button class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button id="btn-save" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Save
                     </button>
                 </div>
 
-                <h3 class="text-center text-2xl mt-9">Saving Amount: <span>00</span></h3>
-                <h3 class="text-center text-2xl mt-9">Remaining Balance: <span>10000</span></h3>
+                <h3 class="text-center text-2xl mt-9">Saving Amount: $<span id="saving" class="text-blue-600">00</span>
+                </h3>
+                <h3 class="text-center text-2xl mt-9">Remaining Balance: $<span id="rem-balance"
+                        class="text-blue-600">00</span></h3>
 
-
-
-                <!-- <div class="flex">
-                    <div>Income:</div>
-                    <div class="bg-slate-300 px-3 py-1">00</div>
-                </div>
-                <div class="flex">
-                    <div>Food:</div>
-                    <div class="bg-slate-300 px-3 py-1">00</div>
-                </div>
-                <div class="flex">
-                    <div>Rent:</div>
-                    <div class="bg-slate-300 px-3 py-1">00</div>
-                </div>
-                <div class="flex">
-                    <div>:</div>
-                    <div class="bg-slate-300 px-3 py-1">00</div>
-                </div> -->
             </div>
         </div>
     </main>
 
+    <script src="money.js"></script>
     <script src="https://kit.fontawesome.com/ed18b58fcd.js" crossorigin="anonymous"></script>
 </body>
 
